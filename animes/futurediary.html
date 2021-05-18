@@ -231,7 +231,7 @@ function ep26() {
 
     function sndbx(){
     var nibba = document.getElementById("myFrame").src;
-    if(iframe.sandbox == 'allow-forms allow-pointer-lock allow-same-origin allow-top-navigation'){
+    if(iframe.sandbox == 'allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation'){
     document.getElementById("myFrame").removeAttribute("sandbox"); 
     }
     frames['myFrame'].location.href=nibba;
