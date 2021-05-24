@@ -4,10 +4,10 @@ Make a framefilter.php and javascriptfilter.php which your iframe points to. You
 
 Replace your standard IFRAME HTML with this:
 
-    <IFRAME SRC="http://www.yourdomainhere.com/framefilter.php?furl=http://www.domainname.com" WIDTH=1000 HEIGHT=500>
+    <IFRAME SRC="http://www.animelab.netlify.app/framefilter.php?furl=https://gogo-play.net/streaming.php?id=OTM3MzY=&title=Another+%28Dub%29+Episode+3" WIDTH=1000 HEIGHT=500>
 If you can see this, your browser doesn't 
 understand IFRAMES. However, we'll still 
-<A HREF="http://www.domainname.com">link</A> 
+<A HREF="https://gogo-play.net/streaming.php?id=OTM3MzY=&title=Another+%28Dub%29+Episode+3">link</A> 
 you to the page.
 </IFRAME>
 Framefilter.php
