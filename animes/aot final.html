@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type=”text/javascript” src=”removeAd.js”></script>
   <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316529);</script>
 <script async src="//static.getclicky.com/js"></script>
 <script>(function removeAdvertisementAndBlockingElements () {
@@ -61,6 +62,30 @@ button{
 
 </head>
 <body>
+<span onClick=”writeCookie(0)”>
+<script language=”javascript”>
+<!–
+adMessage(‘The ad: You really have to buy this stuff’);
+// –>
+</script>
+</span>
+<br><br>
+<script type=”text/javascript”>
+<!–
+if (showads) {
+  document.write(“Remove the ad by clicking it.”)
+}
+//–>
+</script>
+<!– Optional To Show Ads Again –>
+<script type=”text/javascript”>
+<!–
+if (!showads) {
+  document.write(“<form><input type=button value=’Ads back’ onClick=writeCookie(1)></form>”)
+}
+//–>
+</script>
+  
   <br>
 <center><a href="">Attack On  Titan Final Season.</a></center> 
   <br>
