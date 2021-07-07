@@ -1,6 +1,11 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -40,47 +45,88 @@ body{background-color:black;color:gold;}
 #myUL li a:hover:not(.header) {
   background-color: #eee;
 }
-body{background-color:black;color: gold; }    
 
-img{border:2px solid white;}
-  a:link, a:visited {
-  align-items: center;    
-  background-color:blue;
-   color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+body {
+            background-color: black;
+            color: gold;
+        }
+
+        img {
+            border: 2px solid white;
+        }
+
+        a:link,
+        a:visited {
+            align-items: center;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
 
 
-a:hover, a:active {
-  background-color: red;
-} 
-  body{ background-color:black;color: gold;  }
+        a:hover,
+        a:active {
+            background-color: red;
+        }
+
+        body {
+            background-color: black;
+            color: gold;
+        }
 
 
-button{
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 10px;
+            border: red;
+            cursor: pointer;
+        }
+        .dropbtn {
   background-color: #4CAF50;
   color: white;
   padding: 10px;
-  font-size:10px;
-  border: red;
+  font-size: 10px;
+  border: none;
   cursor: pointer;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: green;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: green;}
+
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("div").removeAttr("hidden");
-  });
-});
-</script>
+
 </head>
 <body>
-  
+
 <div class="dropdown" style="float:left;">
   <button class="dropbtn"><img src="https://th.bing.com/th/id/OIP.rFmo1ugP4ewwZgxDTDQ_zwHaHa?w=168&h=180&c=7&o=5&dpr=1.25&pid=1.7"height="20px"width="20px"></button>
   <div class="dropdown-content" style="left:0;">
@@ -98,26 +144,35 @@ $(document).ready(function(){
 
 <br>
 <br>
-<center><a href="">Search for any anime </a></center>
+<br>
+<br><br>
+
 <br>
 <br>
 <center><table>
 <tr>
-<td><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for animes.." title="Type in a name">
+<td><input class="input" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for animes..">
 </td>
-<td><button>Search</button>
+<td><button class="button"onclick = "fun()"id="10">  
+Search  
+</button>
 </td>
 </tr>
 </table></center>
+<script>  
+function fun() {  
+document.getElementById("12").removeAttribute("hidden");}  
 
+</script>
+</script>  
 <div hidden id="12">
 <ul id="myUL">
   <li ><a href="animes/jujutsukaisen.html">Jujutsu Kaisen</a></li>
 <li><a href="animes/aot2.html">Attack on Titan Season 2</a></li>
-<li><a href="animes/steins gate.html">Steins Gate</a></li>
+<li><a href="animes/steinsgate.html">Steins Gate</a></li>
 <li><a href="animes/monster.html">Monster</a></li>
 <li><a href="animes/kabaneri.html">Kabaneri ofThe Iron Fortress</a></li>
-<li><a href="animes/black lagoon.html">Black Lagoon </a></li>
+<li><a href="animes/blacklagoon.html">Black Lagoon </a></li>
 <li><a href="animes/neongenesis.html"></a></li>
 <li><a href="animes/steinsgate0.html"></a></li>
 <li><a href="animes/"></a></li>
