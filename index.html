@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jujutsu kaisen(DUAL AUDIO)
+</title>
+ <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@silvermine/videojs-quality-selector/dist/css/quality-selector.css" rel="stylesheet">
+ <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+<script src="https://unpkg.com/@silvermine/videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js"></script>
+<style>
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Show the controls (hidden at the start by default) */
+.video-js .vjs-control-bar { 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Make the demo a little prettier */
+body {
+  margin-top: 20px;
+  background: #222;
+  text-align: center; 
+  color: #aaa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: radial-gradient(#333, hsl(200,30%,6%) );
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: white;
+    background-color:blue;
+}
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 50px;
+            font-size: 50px;
+            border: red;
+            cursor: pointer;
+        }
+* {
+  box-sizing: border-box;}
+body{background-color:black;color: gold; }   
+
+
+
+
+ 
+  body{ background-color:black;color: gold;  }
+</style>
+</head>
+<body>
+
+<div class="container">
+ <video id="video_1" class="video-js vjs-default-skin vjs-fill"  
+        width="100%" height="100%"
+        controls preload="metadata"
+    data-setup="{}"poster=""
+  >
+   <source src="https://anicdn.herokuapp.com/stream/https%3A%2F%2Fnyaa.ink%2Fdownload%2F1386057.torrent?file=%5BLostYears%5D%20Jujutsu%20Kaisen%20(WEB%201080p%20x264%2010-bit%20AAC)%20%5BDual-Audio%5D%2F%5BLostYears%5D%20Jujutsu%20Kaisen%20-%2004%20(WEB%201080p%20x264%2010-bit%20AAC)%20%5BB64512F0%5D.mkv" type="video/mp4" label="DUB 1080p">
+   <source src="https://anicdn.herokuapp.com/stream/https%3A%2F%2Fnyaa.ink%2Fdownload%2F1516945.torrent?file=Jujutsu.Kaisen.S01.1080p.BluRay.H264.AAC-STARZ%2FJujutsu.Kaisen.S01E04.1080p.BluRay.H264.AAC-STARZ.mkv" type="video/mp4" label="SUB 1080p" selected="true">
+<script>
+var options, player;
+
+options = {
+   controlBar: {
+      children: [
+         'playToggle',
+         'progressControl',
+         'volumePanel',
+         'qualitySelector',
+         'fullscreenToggle',
+      ],
+   },
+};
+
+player = videojs('video_1', options);
+// provide a ratio
+videojs('video_1', { aspectRatio: '16:9' })
+</script>
+</video>
+</div>
+<p><small></small></p>
+</body>
+</html>
